@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <!-- <div data-bind="foreach: myCards">
+            <span data-bind="text: name"></span>
+        </div>
+
+        <div data-bind="foreach: enemyCards">
+            <span data-bind="text: name"></span>
+        </div> -->
+
+        <table>
+            <thead>
+                <th>Moi</th>
+                <th>Ennemi</th>
+                <th>Nom</th>
+                <th>Attaque</th>
+                <th>Vie</th>
+                <th>Tours</th>
+                <th>Compétences</th>
+                <th>Type</th>
+                <th>Sous-types</th>
+            </thead>
+            <tbody data-bind="foreach: cards">
+                <tr>
+                    <td><button data-bind="text: mineCheck, click: toggleMine"></button></td>
+                    <td><button type="checkbox" data-bind="text: enemyCheck, click: toggleEnemy"></button></td>
+                    <td data-bind="text: name"></td>   
+                    <td data-bind="text: attack"></td>
+                    <td data-bind="text: health"></td>
+                    <td data-bind="text: cost"></td> 
+                    <td data-bind="foreach: skillList">
+                        <span data-bind="text: id"></span>
+                        <!-- ko if: $data.all -->
+                        all
+                        <!-- /ko -->
+                    </td>
+                    <td data-bind="text: type"></td>
+                    <td data-bind="foreach: subTypeList">
+                        <span data-bind="text: $data"></span>
+                    </td>
+                </tr>                
+            </tbody>
+        </table>
+    </body>
+</html>

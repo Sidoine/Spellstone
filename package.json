@@ -1,0 +1,24 @@
+{
+  "name": "ss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "import": "node import.js",
+    "build": "webpack",
+    "watch": "webpack -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "raw-loader": "^0.5.1",
+    "ts-loader": "^1.2.2",
+    "typescript": "~2.1",
+    "webpack": "^1.13.3"
+  },
+  "dependencies": {
+    "knockout": "^3.4.1",
+    "@types/knockout": "~3.4.37"
+  }
+}
